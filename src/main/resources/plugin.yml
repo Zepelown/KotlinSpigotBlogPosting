@@ -1,0 +1,4 @@
+name: KotlinTestPlugin
+version: '${version}'
+main: org.zepelown.kotlintestplugin.KotlinTestPlugin
+api-version: 1.20
