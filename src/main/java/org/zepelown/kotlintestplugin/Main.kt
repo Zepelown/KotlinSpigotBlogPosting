@@ -3,9 +3,9 @@ package org.zepelown.kotlintestplugin
 import org.bukkit.plugin.java.JavaPlugin
 import org.zepelown.kotlintestplugin.player.management.PlayerManager
 
-class KotlinTestPlugin : JavaPlugin() {
+class Main : JavaPlugin() {
     companion object{
-        var instance : KotlinTestPlugin? = null
+        var instance : Main? = null
         var playerManager : PlayerManager? = null
     }
 

@@ -4,7 +4,7 @@ import org.bukkit.command.Command
 import org.bukkit.command.CommandExecutor
 import org.bukkit.command.CommandSender
 import org.bukkit.entity.Player
-import org.zepelown.kotlintestplugin.KotlinTestPlugin
+import org.zepelown.kotlintestplugin.Main
 
 object StatusCommand : CommandExecutor{
     override fun onCommand(sender: CommandSender, command: Command, label: String, args: Array<out String>): Boolean {
@@ -13,7 +13,7 @@ object StatusCommand : CommandExecutor{
             return false
         }
         val player = sender.player
-        KotlinTestPlugin.playerManager?.let {
+        Main.playerManager?.let {
             it.getPlayerData(player!!)?.let {
                 player.sendMessage("----------------------------")
                 player.sendMessage("이름 : ${it.displayName}")

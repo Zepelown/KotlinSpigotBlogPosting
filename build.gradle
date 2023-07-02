@@ -58,18 +58,11 @@ compileTestKotlin {
         jvmTarget = "17"
     }
 }
-jar {
-    archiveFileName = 'testplugin.jar'
-    destinationDirectory = file("C:\\Users\\Yoon\\Desktop\\game\\minecraft\\1.20.1 plugin develop server\\plugins")
-    manifest {
-        attributes 'Main-Class': 'org.zepelown.kotlintestplugin.KotlinTestPlugin'
-    }
-}
 
 shadowJar{
     archivesBaseName = 'testplugin'
     destinationDirectory = file("C:\\Users\\Yoon\\Desktop\\game\\minecraft\\1.20.1 plugin develop server\\plugins")
     manifest {
-        attributes 'Main-Class': 'org.zepelown.kotlintestplugin.KotlinTestPlugin'
+        attributes 'Main-Class': 'org.zepelown.kotlintestplugin.Main'
     }
 }

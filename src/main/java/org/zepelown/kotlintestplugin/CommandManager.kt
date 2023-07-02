@@ -4,7 +4,7 @@ import org.zepelown.kotlintestplugin.player.management.commands.StatusCommand
 
 object CommandManager {
     fun registerEvents(){
-        KotlinTestPlugin.instance?.let {
+        Main.instance?.let {
             it.server.run {
                 getPluginCommand("status")!!.setExecutor(StatusCommand)
             }
