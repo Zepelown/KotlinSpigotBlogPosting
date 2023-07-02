@@ -2,3 +2,6 @@ name: KotlinTestPlugin
 version: '${version}'
 main: org.zepelown.kotlintestplugin.KotlinTestPlugin
 api-version: 1.20
+commands:
+  status:
+    description: display player status
